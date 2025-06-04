@@ -10,4 +10,9 @@ import { Mezzi } from '../Models/driving.model';
 })
 export class DrivingListComponent {
   @Input() mezz! : Mezzi
+
+  noleggia(nNoleggi: HTMLInputElement){
+    console.log(" Tipo: " + this.mezz.tipo + " Descrizione: " + this.mezz.descrizione + " Tariffa: " + this.mezz.tariffa + " Valutazione-media: " + this.mezz.valutazionemedia + " Giorni: " + nNoleggi.value)
+
+  }
 }
