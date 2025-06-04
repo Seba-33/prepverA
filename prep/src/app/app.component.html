@@ -6,3 +6,7 @@
   <app-rented [rent]="rents"></app-rented>
 
 }
+
+@for(veic of vettRent; track veic){
+  <app-rent-list [veicoli]="veic"></app-rent-list>
+}
