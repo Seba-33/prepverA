@@ -14,7 +14,8 @@ export class DrivingListComponent {
   @Input() nol! : Rent[]
 
   noleggia(nNoleggi: HTMLInputElement){
-    console.log(" Tipo: " + this.mezz.tipo + " Descrizione: " + this.mezz.descrizione + " Tariffa: " + this.mezz.tariffa + " Valutazione-media: " + this.mezz.valutazionemedia + " Giorni: " + nNoleggi.value)
+    
     this.nol.push(new Rent(this.mezz.tipo, this.mezz.descrizione, this.mezz.tariffa, this.mezz.valutazionemedia, nNoleggi.value))
+    console.log(this.nol)
   }
 }
